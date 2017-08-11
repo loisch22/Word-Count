@@ -15,14 +15,30 @@ namespace WordCounter.Models
       _search = search;
     }
 
+    public string GetSentence()
+    {
+      return _sentence;
+    }
+
+    public string GetSearch()
+    {
+      return _search;
+    }
+
+    public int GetWordCount()
+    {
+      return _wordCounts;
+    }
+
     public int CountRepeats()
     {
-      string[] splitSentence = _sentence.Split(' ');
-      string searchWord = _search;
+      string searchUpper = _search.ToUpper();
+      string sentenceUpper = _sentence.ToUpper();
+      string[] splitSentence = sentenceUpper.Split(' ');
 
       for (int i = 0; i < splitSentence.Length; i++)
       {
-        if (splitSentence[i] == searchWord)
+        if (splitSentence[i].IndexOf(searchUpper) != -1)
         {
           _wordCounts += 1;
         }
