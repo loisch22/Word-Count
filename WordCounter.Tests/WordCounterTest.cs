@@ -9,3 +9,13 @@ namespace WordCounter.Tests
   public class RepeatCounterTest
   {
     [TestMethod]
+    public void CountRepeats_Return0MatchingWords_0()
+    {
+      RepeatCounter newSearch = new RepeatCounter("Hello world", "Goodbye");
+      int expected = 0;
+      int actual = newSearch.CountRepeats();
+      Console.WriteLine(actual);
+      Assert.AreEqual(expected, actual);
+    }
+  }
+}
