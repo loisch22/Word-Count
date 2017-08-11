@@ -1,19 +1,38 @@
 body {
   background-color: #8ACFFF;
+  background-image: url("../img/counters.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100%;
 }
 
 h1 {
   text-align: center;
-  letter-spacing: 15px;
+  letter-spacing: 20px;
   font-size: 50px;
   margin-top: 5%;
+}
+
+.header {
+  background-color: #030972;
+  color: #ffffff;
+  opacity: .9;
+  padding: 30px;
 }
 
 h2 {
   font-size: 25px;
   text-align: center;
   letter-spacing: 6px;
-  margin: 20% 10% 5% 10%;
+  margin: 5% 10% 5% 10%;
+}
+
+.content {
+  color: #ffffff;
+  background-color: #030972;
+  border: #030972;
+  opacity: .9;
+  padding: 30px;
 }
 
 .form {
@@ -31,11 +50,44 @@ label {
 }
 
 #indexSubmit {
-  margin: 10% 42% 5% 42%;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 25px 10px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #030972;
+}
 
+#exit {
+  float: right;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  padding: 10px 25px 10px 25px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #030972;
+}
+
+#indexSubmit:hover, #exit:hover {
+  padding: 15px 35px 15px 35px;
 }
 
 .form-control {
   padding: 4%;
   font-size: 17px;
+}
+
+.result-sentence {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin-bottom: 35px;
+}
+
+.result-labels {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-size: 20px;
 }

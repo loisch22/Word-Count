@@ -2,16 +2,20 @@
   Layout = "_Layout";
 }
 
-<h1>Word Counter</h1>
+<div class="jumbotron header">
+  <h1>Word Counter</h1>
+</div>
 
 <div class="container">
-  <h2>Find out how many times a word appears in any text</h2>
+  <div class="well content">
+    <h2>Find out how many times a word appears in any text</h2>
 
-  <form class="form" action="/result" method="post">
-    <label for="sentence">Enter Text:</label>
-    <input type="text" id="sentence" class="form-control" name="sentence">
-    <label for="searchWord" class="second-label">Enter Search Word:</label>
-    <input type="text" id="searchWord" class="form-control" name="searchWord">
-    <button class="btn btn-default" id="indexSubmit">Find out</button>
-  </form>
+    <form class="form" action="/result" method="post">
+      <label for="sentence">Enter Text:</label>
+      <input type="text" id="sentence" class="form-control" name="sentence">
+      <label for="searchWord" class="second-label">Enter Search Word:</label>
+      <input type="text" id="searchWord" class="form-control" name="searchWord">
+      <button class="btn btn-default" id="indexSubmit">Find out</button>
+    </form>
+  </div>
 </div>

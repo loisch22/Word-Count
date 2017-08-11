@@ -2,13 +2,18 @@
   Layout = "_Layout";
 }
 
-<h1>Word Counter Results</h1>
+<div class="jumbotron header">
+  <h1>Word Counter</h1>
+</div>
 
 <div class="container">
-  <h3>"@Model.GetSentence()"</h3>
+  <div class="well content">
+    <h3 class="result-sentence">"@Model.GetSentence()"</h3>
 
-  <h4>@Model.GetSearch()</h4>
+    <h4 class="result-labels"><strong>The word:</strong> @Model.GetSearch()</h4>
 
-  <h4> @Model.GetWordCount()</h4>
+    <h4 class="result-labels"><strong>Count:</strong> @Model.GetWordCount()</h4>
 
+    <a href="/"><button class="btn btn-default" id="exit">Exit</button></a>
+  </div>
 </div>
