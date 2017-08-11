@@ -19,6 +19,10 @@ _This program is for an Epicodus project. A user can enter a sentence and a word
 
 * _Clone repository_
 
+## Known Bugs
+
+_When running dotnet run and then opening http://localhost:5000 in browser, HTML content does not show. Blue background does show._
+
 ## Technologies Used
 
 _HTML, CSS, C#, .NET_
