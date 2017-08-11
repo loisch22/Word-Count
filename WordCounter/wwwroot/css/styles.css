@@ -1,3 +1,7 @@
+body {
+  background-color: #8ACFFF;
+}
+
 h1 {
   text-align: center;
   letter-spacing: 15px;
@@ -33,5 +37,5 @@ label {
 
 .form-control {
   padding: 4%;
-  font-size: 16px;
+  font-size: 17px;
 }
